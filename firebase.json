@@ -1,13 +1,12 @@
 {
   "hosting": {
-    "site": "soriya-backend",
-    "public": ".",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "source": ".",
     "rewrites": [
       {
         "source": "**",
         "run": {
-          "serviceId": "soriya-backend"
+          "serviceId": "soriya-backend",
+          "region": "asia-east1"
         }
       }
     ]
