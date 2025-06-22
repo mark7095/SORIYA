@@ -1,6 +1,15 @@
 {
   "hosting": {
+    "site": "soriya-backend",
     "public": ".",
-    "ignore": ["node_modules", "firebase.json", "**/.*", "**/node_modules/**"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "soriya-backend"
+        }
+      }
+    ]
   }
 }
