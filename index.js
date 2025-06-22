@@ -1,11 +1,12 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('🔥 Hello from SORIYA backend!');
+// 루트 접속 시 기본 응답
+app.get("/", (req, res) => {
+  res.send("🔥 Hello from SORIYA backend!");
 });
 
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
 });
